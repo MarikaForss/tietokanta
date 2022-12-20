@@ -270,7 +270,7 @@ else
     
     
 ```
-Asiakkaan ja tuotteiden haku tietokannasta. 
+Asiakkaan ja tuotteiden haku sekä tulostaminen tietokannasta. 
 ```
 
 if($_GET['source'] ==4){
