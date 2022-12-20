@@ -11,7 +11,9 @@ Käytetyt ohjelmat:
 + Azure
 
 
-INDEX.PHP koodin alussa style.css on linkitetty html:llään. Luotu sivulle kirjautumislomake, käytetty post menetelmää lomaketietojen lähettämiseen palvelimelle.
+INDEX.PHP
+
+koodin alussa style.css on linkitetty html:llään. Luotu sivulle kirjautumislomake, käytetty post menetelmää lomaketietojen lähettämiseen palvelimelle.
 Lomakkeen käsittely sivu session.php mihin lomaketiedot lähetetään käsiteltäväksi. 
 ```
 <html>
@@ -42,6 +44,10 @@ Lomakkeen käsittely sivu session.php mihin lomaketiedot lähetetään käsitelt
   </body>
 </html>   
 ```
+Koodi palvelimella:
+
+
+![kirjaudusisaan](https://user-images.githubusercontent.com/88820019/208705497-e9213042-5983-4fb5-857c-3abacce536fd.png)
 
  
 
