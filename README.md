@@ -2,7 +2,10 @@ Tietokannan suunnittelu.
 
 Ajatuksena oli suunnittella haavahoidossa olevien asiakkaita ylläpitävä tietokanta, mikä helpottaisi hoitajia löytämään osaston haavahoitoasiakkaat yhdestä paikasta ilman, että niitä ja niihin liittyviä tietoja joutuu etsimään potilastietojärjestelmästä.
 
-![image](https://user-images.githubusercontent.com/88820019/207504684-ecdd5804-e6ed-402a-af14-84b74e83d329.png)
+Drow.io:lla piirretty tietokantasuunitelma
+
+![tietokantakuva3](https://user-images.githubusercontent.com/88820019/208730592-7989a1ab-c05a-403c-bf22-239e623da800.png)
+
 
 Käytetyt ohjelmat:
 + Draw.io
@@ -192,10 +195,107 @@ Asiakas ja tuote.php sivu.
 
 Koodi selaimella
 
+![tietokantakuva1](https://user-images.githubusercontent.com/88820019/208727534-6dd42542-9929-43e3-8a73-006ad73927fe.png)
+
 
 ```
 
-![tietokantakuva1](https://user-images.githubusercontent.com/88820019/208726988-5ee13e86-74dc-463b-a36a-02056879d270.png)
+```
+insert.php asiakas ja tuote sivun käsittelysivu.
+
+aluksi yhteys tietokantaan
+```
+
+<?php
+
+ $servername = "hyvis.mysql.database.azure.com";
+ $username = "db_projekti";
+ $password = "Sivyh2022";
+ $dbname = "Marika_db";
+ 
+ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+ $conn = new mysqli($servername, $username, $password, $dbname);
+ if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+ 
+}
+
+```
+Asiakas ja tuote.php sivu. 
+```
+
+if($_GET['source'] ==1){
+  $user_id = $_POST['user_id'];
+  $asiakasid = $_POST['asiakasid'];
+  $nimi =  $_POST['nimi'];
+  
+  $sql = "INSERT INTO Asiakas VALUES ('1',0,'$nimi')"; 
+  $result = mysqli_query($conn, $sql);
+  header('location:asiakas.php'); 
+}
+
+```
+Asiakas ja tuote.php sivu. 
+```
+
+if($_GET['source'] ==2){
+
+  $id = $_POST['id'];
+  $kuvaus = $_POST['kuvaus'];
+  $asiakasid = $_POST['asiakasid'];
+
+  $sql = "INSERT INTO Tuote VALUES (0,'$kuvaus','$asiakasid')";
+  $result = mysqli_query($conn, $sql);
+  header('Location:asiakas.php');
+
+}
+
+```
+Asiakas ja tuote.php sivu. 
+```
+
+if($_GET['source'] ==3){
+
+  $sql = "SELECT nimi,asiakasid FROM Asiakas";
+  $result = mysqli_query($conn, $sql);
+
+
+   if($result->num_rows > 0)
+      while($row = $result->fetch_assoc())
+       echo "asiakasid: " . $row["asiakasid"]. " - asiakas: " . $row["nimi"]. "<br>";
+      
+else
+      echo "0 results";
+    }
+    
+    
+```
+Asiakas ja tuote.php sivu. 
+```
+
+if($_GET['source'] ==4){
+ 
+ $sql=" SELECT Asiakas.nimi AS Asiakas, Tuote.kuvaus AS Tuote FROM Asiakas, Tuote WHERE Asiakas.asiakasid = Tuote.asiakasid"; 
+ $result = mysqli_query($conn, $sql); 
+    
+
+   if($result->num_rows > 0)
+     while($row = $result->fetch_assoc())  
+      echo " asiakas: " .  $row["Asiakas"]. " tuote: " .  $row["Tuote"]. "<br>";  
+
+
+else
+      echo "0 results";
+}
+
+
+
+$conn->close();
+
+
+?>
+
+```
 
 
 
