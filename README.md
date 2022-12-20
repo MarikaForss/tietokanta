@@ -7,18 +7,22 @@ Drow.io:lla piirretty tietokantasuunitelma
 ![tietokantakuva3](https://user-images.githubusercontent.com/88820019/208730592-7989a1ab-c05a-403c-bf22-239e623da800.png)
 
 
+
+
+
 Käytetyt ohjelmat:
 + Draw.io
 + Visual Studio Code
 + MySql Workbench
 + Azure
 
-+ Tietokannan ja taulukoiden luominen MySql Worbechillä
+-------------------------------
 
++ Tietokannan ja taulukoiden luominen MySql Worbechillä
 
 + MySql Workbench:illä taulukoiden luominen sql käskyillä
 
-+ Palvelimen käynnistäminen localhostissa 
+
 
 ![tietokanta1](https://user-images.githubusercontent.com/88820019/208717161-fc5051ab-2e47-488e-a04f-3dee89a59706.png)
 
@@ -27,6 +31,11 @@ Käytetyt ohjelmat:
 
 
 ![tietokanta3](https://user-images.githubusercontent.com/88820019/208717423-9748d55d-3b36-4490-958a-b2d57e332182.png)
+
+
++ php sivujen luominen Visual Studio Code:ssa
++ Palvelimen käynnistäminen localhostissa 
+
 
 
 index.php
