@@ -296,6 +296,35 @@ $conn->close();
 ?>
 
 ```
+style.css sivujen tyyli ja asettelu
+```
+
+body{   
+    background: rgb(132, 167, 152);  
+}  
+
+.login{
+    width: 400px;
+    margin: 100px auto;
+}
+
+.asiakastuote{
+    width: 800px;
+    margin: 100px auto;
+
+}
+
+.tuotteet{
+    width: 400px;
+    margin: 100px auto;
+
+}
+
+.etusivu{
+    background: rgb(132, 167, 152);
+    
+    
+}
 
 
 
