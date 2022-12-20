@@ -20,7 +20,7 @@ Käytetyt ohjelmat:
 
 + Tietokannan ja taulukoiden luominen MySql Worbechillä
 
-+ MySql Workbench:illä taulukoiden luominen sql käskyillä
++ MySql Workbench:illä taulukoiden luominen sql kielellä
 
 
 
