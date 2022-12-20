@@ -55,7 +55,7 @@ Lomakkeen käsittely sivu session.php mihin lomaketiedot lähetetään käsitelt
   </body>
 </html>   
 ```
-Koodi palvelimella:
+Koodi selaimella:
 
 
 ![kirjaudusisaan](https://user-images.githubusercontent.com/88820019/208705497-e9213042-5983-4fb5-857c-3abacce536fd.png)
@@ -119,5 +119,88 @@ jos tiedot ei täsmää tietokannan kanssa, siirrytään index.php sivulle
 
 $conn->close();
 ?>
+
+```
+Asiakas ja tuote.php sivu. 
+```
+
+<!DOCTYPE HTML>  
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body> 
+<div class ="asiakastuote">
+     
+
+<center><h3>Lisää asiakas:</h3> 
+<form name= "asiakas" method="post" action="insert.php?source=1">
+     
+     <label for = "nimi"> nimi: </label>
+     <input type="text" name="nimi"> 
+     
+<br><br>
+
+<button type="submit" name= "asiakasnappi" value="lisää">lisää</button> <button type="reset" value="Reset">tyhjennä</button> 
+
+</form>
+
+
+<div class="etusivu">      
+<form name= "asiakas" method="post" action="insert.php?source=3">
+
+    <p>
+    <input type="submit" name="laheta" value="hae"\>
+    </p>
+
+</form>
+</div> 
+
+
+
+<h3>Lisää tuote:</h3> <center>
+<form name= "tuote" method="post" action="insert.php?source=2">
+
+     <label for = "kuvaus"> tuote: </label>
+     <input type="text" name="kuvaus"> 
+
+    <label for = "asiakasid"> asiakasid</label>
+     <input type="text" name="asiakasid"> 
+
+
+<br><br>
+<button type="submit" name="tuotenappi" value="lisää">lisää</button> <button type="reset" value="Reset">tyhjennä</button> 
+
+</form>
+
+
+
+<form method="POST" action="insert.php?source=4"> <center>
+
+ <p> 
+<input type="submit" name= "laheta" value="Hae"\>
+</p>  
+
+</form>    
+
+
+ </body>
+</html>
+
+```
+
+
+Koodi selaimella
+
+
+```
+
+![tietokantakuva1](https://user-images.githubusercontent.com/88820019/208726988-5ee13e86-74dc-463b-a36a-02056879d270.png)
+
+
+
+
+
+
 
 
