@@ -221,7 +221,7 @@ aluksi yhteys tietokantaan
 }
 
 ```
-Asiakas ja tuote.php sivu. 
+Asiakkaan lisääminen tietokantaan 
 ```
 
 if($_GET['source'] ==1){
@@ -235,7 +235,7 @@ if($_GET['source'] ==1){
 }
 
 ```
-Asiakas ja tuote.php sivu. 
+Tuotteen lisääminen tietokantaan 
 ```
 
 if($_GET['source'] ==2){
@@ -251,7 +251,7 @@ if($_GET['source'] ==2){
 }
 
 ```
-Asiakas ja tuote.php sivu. 
+Asiakkaan ja asiakasid:n haku ja tulostaminen tietokannasta 
 ```
 
 if($_GET['source'] ==3){
@@ -270,7 +270,7 @@ else
     
     
 ```
-Asiakas ja tuote.php sivu. 
+Asiakkaan ja tuotteiden haku tietokannasta. 
 ```
 
 if($_GET['source'] ==4){
