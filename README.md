@@ -13,8 +13,12 @@ Käytetyt ohjelmat:
 + MySql Workbench
 + Azure
 
++ Tietokannan ja taulukoiden luominen MySql Worbechillä
 
-MySql Workbench:illä taulukoiden luominen sql käskyillä
+
++ MySql Workbench:illä taulukoiden luominen sql käskyillä
+
++ Palvelimen käynnistäminen localhostissa 
 
 ![tietokanta1](https://user-images.githubusercontent.com/88820019/208717161-fc5051ab-2e47-488e-a04f-3dee89a59706.png)
 
