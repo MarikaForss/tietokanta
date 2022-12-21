@@ -93,10 +93,10 @@ Yhteyden luominen tietokantaan;
 ```
 
 
-$servername = "hyvis.mysql.database.azure.com";
-$username = "db_projekti";
-$password = "Sivyh2022";
-$dbname = "Marika_db";
+$servername = "xxxxxxx";
+$username = "xxxxx";
+$password = "xx";
+$dbname = "xxxx";
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -221,10 +221,10 @@ aluksi yhteys tietokantaan
 
 <?php
 
- $servername = "hyvis.mysql.database.azure.com";
- $username = "db_projekti";
- $password = "Sivyh2022";
- $dbname = "Marika_db";
+ $servername = "xxx";
+ $username = "xxx";
+ $password = "xxx";
+ $dbname = "xxx";
  
  mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
  $conn = new mysqli($servername, $username, $password, $dbname);
